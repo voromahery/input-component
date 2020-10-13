@@ -4,7 +4,7 @@
   "description": "## Challenge: Create a reusable input with all the states in the design and a page displaying all the states.",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html"
   },
   "repository": {
     "type": "git",

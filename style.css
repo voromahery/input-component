@@ -1,0 +1,101 @@
+.inputs {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+label:focus-within {
+    color:#2962FF;
+}
+
+input {
+    max-width: 190px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 12px;
+    border-radius: 8px;
+    border: 1px solid #828282;
+    outline: none;
+}
+
+input:hover {
+    border: 1px solid #333333;
+}
+
+input:focus {
+    border: 1px solid #2962FF;
+}
+
+/*///////////////////ERROR//////////////// */
+
+/* .color:focus-within {
+    color: #D32F2F;
+} */
+
+.error {
+    border: 1px solid #D32F2F
+}
+
+.error:hover {
+    border: 1px solid #333333;
+}
+
+.error:focus {
+    border: 1px solid #D32F2F
+}
+
+/* ///////////////// DISABLED ////////////////////////// */
+
+input:disabled {
+    background: #F2F2F2;
+    border: 1px solid #E0E0E0;
+}
+
+/* ///////////////// ICON ///////////////////// */
+
+.startIcon::before {
+    content: "";
+    display: block;
+    background-image: url('http://localhost:1234/phone-icon.76e575a1.svg');
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.endIcon::after {
+    content: "";
+    display: block;
+    background-image: url('./icon/lock-icon.svg');
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* ////////////////////// WITH VALUE////////////////////////// */
+
+/* ////////////////////// SIZE ////////////////////////// */
+
+.sm {
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.md {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+/* //////////////////// FULL WIDTH /////////////////////////// */
+
+.fullWidth {
+    max-width: 100%;
+}
+
+/* //////////////////////// MULTILINE ////////////////////////// */
