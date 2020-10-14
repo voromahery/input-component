@@ -1,17 +1,21 @@
+:root {
+    --focus: #2962FF;
+    --error: #D32F2F;
+    --error-border: 1px solid #D32F2F;
+    --focus-border: 1px solid #2962FF;
+    --hover-border: 1px solid #828282;
+}
+
+.component {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .inputs {
     display: flex;
     flex-direction: column;
     grid-gap: 1rem;
-}
-
-label {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-label:focus-within {
-    color:#2962FF;
 }
 
 input,
@@ -25,84 +29,74 @@ textarea {
     outline: none;
 }
 
+textarea:focus ~ label,
+input:focus ~ label {
+    color: var(--focus);
+}
+
+small {
+    position: absolute;
+    top: 100%;
+}
+
+textarea + small,
 input + small {
     color: #828282;
 }
 
-input:hover {
-    border: 1px solid #333333;
-}
-
-input:focus {
-    border: 1px solid #2962FF;
-}
-
-/*///////////////////ERROR//////////////// */
-
-.error {
-    border: 1px solid #D32F2F
-}
-
+input:hover,
+textarea:hover,
 .error:hover {
-    border: 1px solid #333333;
+    border: var(--hover-border);
 }
 
-.error:focus {
-    border: 1px solid #D32F2F
+textarea:focus,
+input:focus {
+    border: var(--focus-border);
 }
 
-/* ///////////////// DISABLED ////////////////////////// */
+.error:hover ~ label {
+    color:#333333;
+}
 
 input:disabled {
     background: #F2F2F2;
     border: 1px solid #E0E0E0;
     cursor: not-allowed;
 }
-/* /////////////////// WITH SOME INTERESTING TEXT ///////////////////////////////// */
 
+.error,
+.error:focus,
 .errorText,
 .errorText:hover,
 .errorText:focus {
-    border: 1px solid #D32F2F
+    border: var(--error-border);
 }
 
-.errorText + small {
-    color: #D32F2F;
+.errorText + small,
+.error ~ label,
+.error:focus ~ label,
+.errorText ~ label,
+.errorText:focus ~ label {
+    color: var(--error);
 }
-
-/* ///////////////// ICON ///////////////////// */
 
 .startIcon {
     display: block;
     background-image: url('http://localhost:1234/phone-icon.76e575a1.svg');
-    /* width: 18px;
-    height: 18px; */
     background-position: 14px center;
     padding-left: 45px;
     background-repeat: no-repeat;
-    background-size: 18px; 
-    /* position: absolute; */
-    /* top: 50%;
-    left: 10px; */
+    background-size: 18px;
  } 
 
 .endIcon {
-    /* content: ""; */
-    /* display: block; */
     background-image: url('./icon/lock-icon.svg');
-    /* width: 1rem;
-    height: 1rem; */
-    /* top: 50%; */
     background-size: 25px;
     background-position: 95% center;
     padding-right: 35px;
     background-repeat: no-repeat;
-    /* position: absolute; */
 }
-
-/* ////////////////////// WITH VALUE////////////////////////// */
-
-/* ////////////////////// SIZE ////////////////////////// */
 
 .sm {
     padding-top: 9px;
@@ -114,10 +108,6 @@ input:disabled {
     padding-bottom: 18px;
 }
 
-/* //////////////////// FULL WIDTH /////////////////////////// */
-
 .fullWidth {
     max-width: 100%;
 }
-
-/* //////////////////////// MULTILINE ////////////////////////// */

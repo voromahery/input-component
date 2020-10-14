@@ -29,11 +29,10 @@ function Inputs(props) {
     }
 
     return (
-        <div>
-            <label htmlFor="input">{props.children}
+        <div className="component">
             <input  type="text" name="input" placeholder="Placeholder" defaultValue={props.value} className={style} disabled={props.disabled} row={props.row} />
                 <small>{props.helperText}</small>
-            </label>
+                <label htmlFor="input">{props.children}</label>
         </div>
     )
 }

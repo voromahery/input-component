@@ -28399,9 +28399,9 @@ function Inputs(props) {
     style = props.fullWidth;
   }
 
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "input"
-  }, props.children, /*#__PURE__*/_react.default.createElement("input", {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "component"
+  }, /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
     name: "input",
     placeholder: "Placeholder",
@@ -28409,7 +28409,9 @@ function Inputs(props) {
     className: style,
     disabled: props.disabled,
     row: props.row
-  }), /*#__PURE__*/_react.default.createElement("small", null, props.helperText)));
+  }), /*#__PURE__*/_react.default.createElement("small", null, props.helperText), /*#__PURE__*/_react.default.createElement("label", {
+    htmlFor: "input"
+  }, props.children));
 }
 
 var _default = Inputs;
@@ -28429,13 +28431,15 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function TextArea(props) {
-  return /*#__PURE__*/_react.default.createElement("label", {
-    htmlFor: "multiline"
-  }, props.children, /*#__PURE__*/_react.default.createElement("textarea", {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "component"
+  }, /*#__PURE__*/_react.default.createElement("textarea", {
     rows: "4",
     name: "multiline",
     placeholder: "Placeholder"
-  }));
+  }), /*#__PURE__*/_react.default.createElement("label", {
+    htmlFor: "multiline"
+  }, props.children));
 }
 
 var _default = TextArea;
