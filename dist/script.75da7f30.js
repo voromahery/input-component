@@ -28373,6 +28373,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function Inputs(props) {
   var style = "";
+  var icon = "";
 
   if (props.error) {
     style = props.error;
@@ -28380,6 +28381,10 @@ function Inputs(props) {
 
   if (props.errorText) {
     style = props.errorText;
+  }
+
+  if (props.endIcon) {
+    style = props.endIcon;
   }
 
   if (props.startIcon) {
@@ -28394,13 +28399,9 @@ function Inputs(props) {
     style = props.fullWidth;
   }
 
-  if (props.multiline) {
-    style = props.multiline;
-  }
-
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("label", {
     htmlFor: "input"
-  }, "label", /*#__PURE__*/_react.default.createElement("input", {
+  }, props.children, /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
     name: "input",
     placeholder: "Placeholder",
@@ -28415,7 +28416,31 @@ var _default = Inputs;
 exports.default = _default;
 },{"react":"node_modules/react/index.js","./style.css":"style.css"}],"icon/phone-icon.svg":[function(require,module,exports) {
 module.exports = "/phone-icon.76e575a1.svg";
-},{}],"script.js":[function(require,module,exports) {
+},{}],"TextArea.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function TextArea(props) {
+  return /*#__PURE__*/_react.default.createElement("label", {
+    htmlFor: "multiline"
+  }, props.children, /*#__PURE__*/_react.default.createElement("textarea", {
+    rows: "4",
+    name: "multiline",
+    placeholder: "Placeholder"
+  }));
+}
+
+var _default = TextArea;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"script.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -28426,39 +28451,41 @@ var _Inputs = _interopRequireDefault(require("./Inputs.js"));
 
 var _phoneIcon = _interopRequireDefault(require("./icon/phone-icon.svg"));
 
+var _TextArea = _interopRequireDefault(require("./TextArea.js"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Collection of inputs"), /*#__PURE__*/_react.default.createElement("div", {
     className: "inputs"
-  }, /*#__PURE__*/_react.default.createElement(_Inputs.default, null), /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, /*#__PURE__*/_react.default.createElement(_Inputs.default, null, "label"), /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     error: "error"
-  }), /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, "label"), /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     disabled: true
-  }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, "label"), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     helperText: "Some interesting text"
-  })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, "label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     helperText: "Some interesting text",
     error: "errorText"
-  })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, "label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     startIcon: "startIcon"
-  }), /*#__PURE__*/_react.default.createElement(_Inputs.default, {
-    startIcon: "endIcon"
-  })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, "label"), /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+    endIcon: "endIcon"
+  }, "label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     value: "Text"
-  })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, "label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     size: "sm"
-  }), /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, "label"), /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     size: "md"
-  })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, "label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     fullWidth: "fullWidth"
-  })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
-    multiline: "multiline"
-  }))), /*#__PURE__*/_react.default.createElement("p", null, "H. Daniel Fabrice @ DevChallenges.io"));
+  }, "label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_TextArea.default, {
+    rows: "multiline"
+  }, "label"))), /*#__PURE__*/_react.default.createElement("p", null, "H. Daniel Fabrice @ DevChallenges.io"));
 }
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById('root'));
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./Inputs.js":"Inputs.js","./icon/phone-icon.svg":"icon/phone-icon.svg"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./Inputs.js":"Inputs.js","./icon/phone-icon.svg":"icon/phone-icon.svg","./TextArea.js":"TextArea.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;

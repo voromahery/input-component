@@ -7,14 +7,16 @@
 label {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 label:focus-within {
     color:#2962FF;
 }
 
-input {
-    max-width: 190px;
+input,
+textarea {
+    max-width: 200px;
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 12px;
@@ -54,10 +56,13 @@ input:focus {
 input:disabled {
     background: #F2F2F2;
     border: 1px solid #E0E0E0;
+    cursor: not-allowed;
 }
 /* /////////////////// WITH SOME INTERESTING TEXT ///////////////////////////////// */
 
-.errorText {
+.errorText,
+.errorText:hover,
+.errorText:focus {
     border: 1px solid #D32F2F
 }
 
@@ -67,24 +72,32 @@ input:disabled {
 
 /* ///////////////// ICON ///////////////////// */
 
-.startIcon::before {
-    content: "";
+.startIcon {
     display: block;
     background-image: url('http://localhost:1234/phone-icon.76e575a1.svg');
-    width: 18px;
-    height: 18px;
+    /* width: 18px;
+    height: 18px; */
+    background-position: 14px center;
+    padding-left: 45px;
     background-repeat: no-repeat;
-    background-size: contain;
-}
+    background-size: 18px; 
+    /* position: absolute; */
+    /* top: 50%;
+    left: 10px; */
+ } 
 
-.endIcon::after {
-    content: "";
-    display: block;
+.endIcon {
+    /* content: ""; */
+    /* display: block; */
     background-image: url('./icon/lock-icon.svg');
-    width: 1rem;
-    height: 1rem;
+    /* width: 1rem;
+    height: 1rem; */
+    /* top: 50%; */
+    background-size: 25px;
+    background-position: 95% center;
+    padding-right: 35px;
     background-repeat: no-repeat;
-    background-size: contain;
+    /* position: absolute; */
 }
 
 /* ////////////////////// WITH VALUE////////////////////////// */
@@ -108,6 +121,3 @@ input:disabled {
 }
 
 /* //////////////////////// MULTILINE ////////////////////////// */
-.multiline {
-    padding-bottom: 4rem;
-}
