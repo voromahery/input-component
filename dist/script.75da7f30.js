@@ -28437,7 +28437,7 @@ function TextArea(props) {
     rows: "4",
     name: "multiline",
     placeholder: "Placeholder"
-  }), /*#__PURE__*/_react.default.createElement("label", {
+  }), /*#__PURE__*/_react.default.createElement("small", null, props.helperText), /*#__PURE__*/_react.default.createElement("label", {
     htmlFor: "multiline"
   }, props.children));
 }
