@@ -6,6 +6,14 @@
     --hover-border: 1px solid #828282;
 }
 
+body {
+    font-family: 'Tahoma', Arial, Helvetica, sans-serif;
+}
+ 
+.container {
+    position: relative;
+}
+
 .component {
     position: relative;
     display: flex;
@@ -29,6 +37,15 @@ textarea {
     outline: none;
 }
 
+textarea:hover ~ label,
+textarea:hover ~ small,
+input:hover ~ small,
+input:hover ~ label,
+textarea + small,
+input + small {
+    color: #828282;
+}
+
 input:focus ~ small,
 textarea:focus ~ small,
 textarea:focus ~ label,
@@ -39,11 +56,8 @@ input:focus ~ label {
 small {
     position: absolute;
     top: 100%;
-}
-
-textarea + small,
-input + small {
-    color: #828282;
+    left: 0;
+    right: 0;
 }
 
 input:hover,
@@ -75,11 +89,15 @@ input:disabled {
     border: var(--error-border);
 }
 
+.errorText:focus ~ small,
+.errorText:hover ~ small,
 .errorText + small,
 .error ~ label,
 .error:focus ~ label,
 .errorText ~ label,
-.errorText:focus ~ label {
+.errorText:focus ~ label,
+.errorText:hover ~ label
+ {
     color: var(--error);
 }
 

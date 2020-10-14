@@ -18,14 +18,14 @@ function App() {
                 <div>
                     <Input helperText="Some interesting text" error="errorText">label</Input>
                 </div>
-                <div>
+                <div className="container">
                     <Input startIcon="startIcon">label</Input>
                     <Input endIcon="endIcon">label</Input>
                 </div>
                 <div>
                     <Input value="Text">label</Input>
                 </div>
-                <div>
+                <div className="container">
                     <Input size="sm">label</Input>
                     <Input size="md">label</Input>
                 </div>
