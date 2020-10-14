@@ -28357,7 +28357,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./icon\\lock-icon.svg":[["lock-icon.899d6418.svg","icon/lock-icon.svg"],"icon/lock-icon.svg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Inputs.js":[function(require,module,exports) {
+},{"./icon\\blue-phone.svg":[["blue-phone.08e95da3.svg","icon/blue-phone.svg"],"icon/blue-phone.svg"],"./icon\\blue-lock.svg":[["blue-lock.be722714.svg","icon/blue-lock.svg"],"icon/blue-lock.svg"],"./icon\\lock-icon.svg":[["lock-icon.899d6418.svg","icon/lock-icon.svg"],"icon/lock-icon.svg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Inputs.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {

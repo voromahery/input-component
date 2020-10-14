@@ -90,6 +90,14 @@ input:disabled {
     background-size: 18px;
  } 
 
+.startIcon:focus {
+    background-image: url('./icon/blue-phone.svg');   
+}
+
+.endIcon:focus {
+    background-image: url('./icon/blue-lock.svg');   
+}
+
 .endIcon {
     background-image: url('./icon/lock-icon.svg');
     background-size: 25px;

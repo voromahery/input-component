@@ -90,6 +90,14 @@ input:disabled {
     background-size: 18px;
  } 
 
+.startIcon:focus {
+    background-image: url('/blue-phone.08e95da3.svg');   
+}
+
+.endIcon:focus {
+    background-image: url('/blue-lock.be722714.svg');   
+}
+
 .endIcon {
     background-image: url('/lock-icon.899d6418.svg');
     background-size: 25px;
