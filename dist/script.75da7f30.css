@@ -23,6 +23,10 @@ input {
     outline: none;
 }
 
+input + small {
+    color: #828282;
+}
+
 input:hover {
     border: 1px solid #333333;
 }
@@ -32,10 +36,6 @@ input:focus {
 }
 
 /*///////////////////ERROR//////////////// */
-
-/* .color:focus-within {
-    color: #D32F2F;
-} */
 
 .error {
     border: 1px solid #D32F2F
@@ -54,6 +54,15 @@ input:focus {
 input:disabled {
     background: #F2F2F2;
     border: 1px solid #E0E0E0;
+}
+/* /////////////////// WITH SOME INTERESTING TEXT ///////////////////////////////// */
+
+.errorText {
+    border: 1px solid #D32F2F
+}
+
+.errorText + small {
+    color: #D32F2F;
 }
 
 /* ///////////////// ICON ///////////////////// */
@@ -99,5 +108,8 @@ input:disabled {
 }
 
 /* //////////////////////// MULTILINE ////////////////////////// */
+.multiline {
+    padding-bottom: 4rem;
+}
 
 /*# sourceMappingURL=/script.75da7f30.css.map */

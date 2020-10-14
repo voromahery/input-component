@@ -28378,6 +28378,10 @@ function Inputs(props) {
     style = props.error;
   }
 
+  if (props.errorText) {
+    style = props.errorText;
+  }
+
   if (props.startIcon) {
     style = props.startIcon;
   }
@@ -28390,6 +28394,10 @@ function Inputs(props) {
     style = props.fullWidth;
   }
 
+  if (props.multiline) {
+    style = props.multiline;
+  }
+
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("label", {
     htmlFor: "input"
   }, "label", /*#__PURE__*/_react.default.createElement("input", {
@@ -28400,7 +28408,7 @@ function Inputs(props) {
     className: style,
     disabled: props.disabled,
     row: props.row
-  })), /*#__PURE__*/_react.default.createElement("small", null, props.helperText));
+  }), /*#__PURE__*/_react.default.createElement("small", null, props.helperText)));
 }
 
 var _default = Inputs;
@@ -28431,7 +28439,7 @@ function App() {
     helperText: "Some interesting text"
   })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     helperText: "Some interesting text",
-    error: "error"
+    error: "errorText"
   })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     startIcon: "startIcon"
   }), /*#__PURE__*/_react.default.createElement(_Inputs.default, {
@@ -28445,7 +28453,7 @@ function App() {
   })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     fullWidth: "fullWidth"
   })), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
-    row: "multiline"
+    multiline: "multiline"
   }))), /*#__PURE__*/_react.default.createElement("p", null, "H. Daniel Fabrice @ DevChallenges.io"));
 }
 
@@ -28478,7 +28486,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60143" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52556" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

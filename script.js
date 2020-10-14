@@ -15,7 +15,7 @@ function App() {
                     <Input helperText="Some interesting text" />
                 </div>
                 <div>
-                    <Input helperText="Some interesting text" error="error" />
+                    <Input helperText="Some interesting text" error="errorText" />
                 </div>
                 <div>
                     <Input startIcon="startIcon" />
@@ -32,7 +32,7 @@ function App() {
                     <Input fullWidth="fullWidth" />
                 </div>
                 <div>
-                    <Input row="multiline" />
+                    <Input multiline="multiline" />
                 </div>
             </div>
             <p>H. Daniel Fabrice @ DevChallenges.io</p>
