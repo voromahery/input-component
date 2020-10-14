@@ -29,6 +29,8 @@ textarea {
     outline: none;
 }
 
+input:focus ~ small,
+textarea:focus ~ small,
 textarea:focus ~ label,
 input:focus ~ label {
     color: var(--focus);
