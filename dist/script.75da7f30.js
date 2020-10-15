@@ -28503,7 +28503,7 @@ function App() {
     fullWidth: "fullWidth"
   }, "label")), /*#__PURE__*/_react.default.createElement("div", null, "<input multiline row=\"4\" />", /*#__PURE__*/_react.default.createElement(_TextArea.default, {
     rows: "multiline"
-  }, "label"))), /*#__PURE__*/_react.default.createElement("p", null, "H. Daniel Fabrice @ DevChallenges.io"));
+  }, "label"))));
 }
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById('root'));

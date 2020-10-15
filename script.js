@@ -57,7 +57,6 @@ function App() {
                     <TextArea rows="multiline">label</TextArea>
                 </div>
             </div>
-            <p>H. Daniel Fabrice @ DevChallenges.io</p>
         </div>
     )
 }

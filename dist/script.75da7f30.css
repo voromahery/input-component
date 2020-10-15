@@ -10,6 +10,16 @@ body {
     font-family: 'Tahoma', Arial, Helvetica, sans-serif;
 }
 
+header {
+    color: #ffffff;
+    text-shadow: -1px 0px 3px black;
+}
+
+footer {
+    font-family: 'Segoe Print', cursive;
+    font-size: 12px;
+}
+
 #root {
     font-size: 14px;
 }
