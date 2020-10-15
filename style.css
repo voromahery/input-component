@@ -9,6 +9,20 @@
 body {
     font-family: 'Tahoma', Arial, Helvetica, sans-serif;
 }
+
+#root {
+font-size: 14px;
+}
+
+main {
+    max-width: 500px;
+    margin: auto;
+}
+
+.wrapper {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
  
 .container {
     position: relative;
@@ -106,9 +120,21 @@ input:disabled {
     background-image: url('http://localhost:1234/phone-icon.76e575a1.svg');
     background-position: 14px center;
     padding-left: 45px;
-    background-repeat: no-repeat;
     background-size: 18px;
  } 
+
+ .endIcon {
+    background-image: url('./icon/lock-icon.svg');
+    background-size: 25px;
+    background-position: 95% center;
+    padding-right: 35px;
+}
+
+.startIcon,
+.endIcon {
+    max-width: 169px;
+    background-repeat: no-repeat;
+}
 
 .startIcon:focus {
     background-image: url('./icon/blue-phone.svg');   
@@ -116,14 +142,6 @@ input:disabled {
 
 .endIcon:focus {
     background-image: url('./icon/blue-lock.svg');   
-}
-
-.endIcon {
-    background-image: url('./icon/lock-icon.svg');
-    background-size: 25px;
-    background-position: 95% center;
-    padding-right: 35px;
-    background-repeat: no-repeat;
 }
 
 .sm {
@@ -138,4 +156,13 @@ input:disabled {
 
 .fullWidth {
     max-width: 100%;
+}
+
+
+@media (min-width: 500px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
 }

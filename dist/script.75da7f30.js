@@ -28357,7 +28357,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./icon\\blue-phone.svg":[["blue-phone.08e95da3.svg","icon/blue-phone.svg"],"icon/blue-phone.svg"],"./icon\\blue-lock.svg":[["blue-lock.be722714.svg","icon/blue-lock.svg"],"icon/blue-lock.svg"],"./icon\\lock-icon.svg":[["lock-icon.899d6418.svg","icon/lock-icon.svg"],"icon/lock-icon.svg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Inputs.js":[function(require,module,exports) {
+},{"./icon\\lock-icon.svg":[["lock-icon.899d6418.svg","icon/lock-icon.svg"],"icon/lock-icon.svg"],"./icon\\blue-phone.svg":[["blue-phone.08e95da3.svg","icon/blue-phone.svg"],"icon/blue-phone.svg"],"./icon\\blue-lock.svg":[["blue-lock.be722714.svg","icon/blue-lock.svg"],"icon/blue-lock.svg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Inputs.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28460,34 +28460,48 @@ var _TextArea = _interopRequireDefault(require("./TextArea.js"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "Collection of inputs"), /*#__PURE__*/_react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
     className: "inputs"
-  }, /*#__PURE__*/_react.default.createElement(_Inputs.default, null, "label"), /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, "<input />", /*#__PURE__*/_react.default.createElement(_Inputs.default, null, "label"), "<input error />", /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     error: "error"
-  }, "label"), /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, "label"), "<input disabled />", /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     disabled: true
-  }, "label"), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, "label"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "wrapper"
+  }, "<input helperText=\"Some interesting text here\"/>", /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     helperText: "Some interesting text"
-  }, "label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, "label")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "wrapper"
+  }, "<input helperText=\"Some interesting text here\" error />", /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     helperText: "Some interesting text",
     error: "errorText"
-  }, "label")), /*#__PURE__*/_react.default.createElement("div", {
+  }, "label"))), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "wrapper"
+  }, "<input startIcon />", /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     startIcon: "startIcon"
-  }, "label"), /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, "label")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "wrapper"
+  }, "<input endIcon />", /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     endIcon: "endIcon"
-  }, "label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, "label"))), /*#__PURE__*/_react.default.createElement("div", null, "<input value=\"Text\"/>", /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     value: "Text"
   }, "label")), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "wrapper"
+  }, "<input size=\"sm\" />", /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     size: "sm"
-  }, "label"), /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, "label")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "wrapper"
+  }, "<input size=\"md\" />", /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     size: "md"
-  }, "label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Inputs.default, {
+  }, "label"))), /*#__PURE__*/_react.default.createElement("div", null, "<input fullWidth />", /*#__PURE__*/_react.default.createElement(_Inputs.default, {
     fullWidth: "fullWidth"
-  }, "label")), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_TextArea.default, {
+  }, "label")), /*#__PURE__*/_react.default.createElement("div", null, "<input multiline row=\"4\" />", /*#__PURE__*/_react.default.createElement(_TextArea.default, {
     rows: "multiline"
   }, "label"))), /*#__PURE__*/_react.default.createElement("p", null, "H. Daniel Fabrice @ DevChallenges.io"));
 }
@@ -28521,7 +28535,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52880" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49827" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
