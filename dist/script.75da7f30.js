@@ -28285,7 +28285,9 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"icon/phone-icon.svg":[function(require,module,exports) {
+module.exports = "/phone-icon.76e575a1.svg";
+},{}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -28357,7 +28359,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./icon\\lock-icon.svg":[["lock-icon.899d6418.svg","icon/lock-icon.svg"],"icon/lock-icon.svg"],"./icon\\blue-phone.svg":[["blue-phone.08e95da3.svg","icon/blue-phone.svg"],"icon/blue-phone.svg"],"./icon\\blue-lock.svg":[["blue-lock.be722714.svg","icon/blue-lock.svg"],"icon/blue-lock.svg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Inputs.js":[function(require,module,exports) {
+},{"./icon\\phone-icon.svg":[["phone-icon.76e575a1.svg","icon/phone-icon.svg"],"icon/phone-icon.svg"],"./icon\\lock-icon.svg":[["lock-icon.899d6418.svg","icon/lock-icon.svg"],"icon/lock-icon.svg"],"./icon\\blue-phone.svg":[["blue-phone.08e95da3.svg","icon/blue-phone.svg"],"icon/blue-phone.svg"],"./icon\\blue-lock.svg":[["blue-lock.be722714.svg","icon/blue-lock.svg"],"icon/blue-lock.svg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"Inputs.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28416,9 +28418,7 @@ function Inputs(props) {
 
 var _default = Inputs;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./style.css":"style.css"}],"icon/phone-icon.svg":[function(require,module,exports) {
-module.exports = "/phone-icon.76e575a1.svg";
-},{}],"TextArea.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./style.css":"style.css"}],"TextArea.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {

@@ -11,7 +11,7 @@ body {
 }
 
 #root {
-font-size: 14px;
+    font-size: 14px;
 }
 
 main {
@@ -117,7 +117,7 @@ input:disabled {
 
 .startIcon {
     display: block;
-    background-image: url('http://localhost:1234/phone-icon.76e575a1.svg');
+    background-image: url('./icon/phone-icon.svg');
     background-position: 14px center;
     padding-left: 45px;
     background-size: 18px;
