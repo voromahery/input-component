@@ -15,17 +15,34 @@ header {
     text-shadow: -1px 0px 3px black;
 }
 
+header,
+footer {
+    background-color: purple;
+    padding: 1rem;
+}
+
+header,
+footer,
+.inputs {
+    padding: 1rem;
+}
+
 footer {
     font-family: 'Segoe Print', cursive;
     font-size: 12px;
+}
+
+footer a {
+    color: #FFFFFF;
 }
 
 #root {
     font-size: 14px;
 }
 
-main {
-    max-width: 500px;
+main,
+footer {
+    max-width: 550px;
     margin: auto;
 }
 
@@ -48,6 +65,7 @@ main {
     display: flex;
     flex-direction: column;
     grid-gap: 1rem;
+    background-color: #f9fbff;;
 }
 
 input,
@@ -169,7 +187,7 @@ input:disabled {
 }
 
 
-@media (min-width: 500px) {
+@media (min-width: 550px) {
     .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
