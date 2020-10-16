@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Input component</h1>
 
 <div align="center">
   <h3>
@@ -19,6 +19,7 @@
 ## Table of Contents
 
 -   [Overview](#overview)
+    -   [Built With](#built-with)
     -   [Built With](#built-with)
 -   [Features](#features)
 -   [How to use](#how-to-use)
@@ -74,6 +75,6 @@ $ npm start
 
 ## Contact
 
--   Website [your-website.com](https://{your-web-site-link})
--   GitHub [@your-username](https://{github.com/your-usermame})
--   Twitter [@your-twitter](https://{twitter.com/your-username})
+-   Website [H. Daniel Fabrice @ DevChallenges.io](https://unruffled-villani-fc2b51.netlify.app)
+-   GitHub [voromahery](https://github.com/voromahery/input-component)
+
